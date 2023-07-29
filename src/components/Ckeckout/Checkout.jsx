@@ -44,15 +44,14 @@ const Checkout = () => {
     }
 
     addDoc(collection(db, "orders"), order)
-      .then(
-        setOrderId(docRef => {
-          setOrderId(docRef.id)
-          emptyCart()
-        })
-      )
-      .catch(
-        console.log("Error al crear la orden", error),
+      .then(docRef => {
+        setOrderId(docRef.id);
+        emptyCart();
+      })
+      .catch((error) => {
+        console.log(error)
         setError("Error al comprar, intente mas tarde")
+      }
       )
   }
 
@@ -105,7 +104,9 @@ const Checkout = () => {
         <button type='submit'>Finalizar compra</button>
       </form>
       {
-        orderId && <p>Tu compra ha sido finalizada con exito, para hacer el seguimiento te damos tu numero de orden: {orderId}</p>
+        orderId && (
+          <p>Tu compra ha sido finalizada con exito, para hacer el seguimiento te damos tu numero de orden: {orderId}</p>
+        )
       }
     </div>
   )
