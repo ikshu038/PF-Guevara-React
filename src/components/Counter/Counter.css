@@ -1,0 +1,33 @@
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 3rem;
+    background-color: #162a1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f3c2b;
+}
+
+#add {
+    margin-left: 5px;
+}
+
+#decrease {
+    margin-right: 5px;
+}

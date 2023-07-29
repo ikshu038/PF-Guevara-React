@@ -1,0 +1,25 @@
+.header {
+    background-color: #4e6b5a;
+    border-bottom: 2px solid #1f2722;
+}
+
+.header .nav__ul__li__img {
+    width: 7rem;
+}
+
+.header .navbar-links {
+    color: #162a1e;
+    font-size: 1.26rem;
+    font-family: "Rubik", sans-serif;
+    padding: 0.1rem;
+}
+
+.header .navbar-links .nav-link:hover {
+    color: #225136;
+}
+
+.nav-link {
+    margin: .5rem;
+    cursor: pointer;
+}
+

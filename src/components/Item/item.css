@@ -1,0 +1,14 @@
+.imgProduct {
+    height: 17rem;
+    width: 17rem;
+    object-fit: cover;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.card-price {
+    font-size: 1.8rem;
+    margin-top: -1rem;
+}
